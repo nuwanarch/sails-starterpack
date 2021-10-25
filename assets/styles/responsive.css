@@ -1,0 +1,41 @@
+@media (max-width: 991px){
+
+   #sidebar.active {
+    margin-left: -100%;
+  }
+   #sidebar {
+    width: auto;
+    min-width: 100%;
+    max-width: 100%;
+    transition: all 0.3s;
+    z-index: 2!important;
+    position: fixed;
+  }
+
+  div#content .flex-grow-1.right-content {
+    padding: 15px;
+  }
+  div#content .navbar button.toogle-btn.text-sidebar {
+    position: absolute;
+    z-index: 100;
+    right: 0;
+  }
+ #sidebar .sidebar-header {
+      padding: 24px 10px 15px 10px;
+  }
+}
+
+@media (max-width: 767px){
+
+   #sidebarCollapse span {
+    display: none;
+  } 
+   #sidebar {
+    min-width: 100%;
+    max-width: 100%;
+  }
+   #sidebar.active {
+    margin-left: -100%;
+  }
+
+}

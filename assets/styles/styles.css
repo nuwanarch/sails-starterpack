@@ -1,0 +1,148 @@
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+button:focus {
+  outline: 1px dotted;
+  outline: none;
+}
+.wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+.scroll-section::-webkit-scrollbar-track {
+  background-color:#fff;
+}
+
+.scroll-section::-webkit-scrollbar-thumb {
+  background: #252f3a;
+  border: 1px solid #252f3a;
+  border-radius: 4px;
+}
+
+.scroll-section {
+  height: 100vh;
+  overflow-y: scroll;
+}
+#sidebar {
+  min-width: 415px;
+  max-width: 415px;
+  transition: all 0.3s;
+  background: #282728;
+}
+
+#sidebar.active {
+  margin-left: -415px;
+}
+
+#sidebar .sidebar-header {
+  padding: 25px;
+  border-bottom: 1px solid #f8f9fa;
+}
+
+
+#sidebar .links a {
+  display: block;
+  color: #fff;
+  margin-bottom: 6px;
+  text-decoration: none;
+  transition: .3s;
+  border: none;
+  padding: 7px 10px;
+  background-color: #333;
+}
+#sidebar .links a:hover {
+  padding-left: 5px;
+}
+
+#sidebar  div#accordion .panel-heading a{
+  margin-bottom: 0rem;
+}
+#sidebar  div#accordion .panel-heading > a:before {
+  float: right !important;
+  font-family: FontAwesome;
+  content:"\f068";
+  padding-right: 5px;
+}
+#sidebar  div#accordion .panel-heading > a.collapsed:before {
+  float: right !important;
+  content:"\f067";
+}
+#sidebar  div#accordion .panel-heading > a:hover,
+#sidebar  div#accordion .panel-heading > a:active,
+#sidebar  div#accordion .panel-heading > a:focus  {
+  text-decoration:none;
+}
+#sidebar  div#accordion .panel-body {
+    padding-left: 15px;
+    background-color: #333;
+        border-top: 1px solid #282728;
+}
+#sidebar  div#accordion .panel-body p{
+  margin: 0;
+}
+#sidebar  div#accordion .panel-body a{
+  padding: 8px 10px 8px 4px;
+  margin: 0;
+}
+#sidebar  div#accordion .panel.panel-default {
+    margin-bottom: 1rem;
+}
+
+#content {
+  width: 100%;
+  /* padding: 20px; */
+  min-height: 100vh;
+  transition: all 0.3s;
+}
+
+#content .flex-grow-1.right-content {
+  padding: 40px;
+  background: #fff;
+}
+
+
+#content img.img-fluid.logo {
+  width: 150px;
+}
+
+#content .navbar {
+  padding: 15px 10px;
+  background: #fff;
+  border: none;
+  border-radius: 0;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: 0 60% !important;
+  background: url(../images/form_bg.jpg);
+  background-size: cover;
+  background: #282828;
+}
+
+#content .navbar .navbar-btn {
+  box-shadow: none;
+  outline: none !important;
+  border: none;
+}
+
+#content .navbar a.user-name {
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  display: contents;
+}
+#content .navbar a.user-name:hover {
+  text-decoration: none;
+}
+#content .navbar a.user-name i.fa.fa-user-circle {
+  font-size: 25px;
+}
+
+#content .navbar button.toogle-btn.text-sidebar {
+  background: transparent;
+  border: none;
+  margin-right: 15px;
+  padding: 0;
+}
